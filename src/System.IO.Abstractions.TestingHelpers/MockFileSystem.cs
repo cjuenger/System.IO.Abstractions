@@ -65,6 +65,8 @@ namespace System.IO.Abstractions.TestingHelpers
 
         public StringOperations StringOperations { get; }
         public IFile File { get; }
+        
+        public IZipFile ZipFile { get; }
         public IDirectory Directory { get; }
         public IFileInfoFactory FileInfo { get; }
         public IFileStreamFactory FileStream { get; }

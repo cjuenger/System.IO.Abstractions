@@ -10,11 +10,14 @@
             FileInfo = new FileInfoFactory(this);
             Path = new PathWrapper(this);
             File = new FileWrapper(this);
+            ZipFile = new ZipFileWrapper();
             Directory = new DirectoryWrapper(this);
             FileStream = new FileStreamFactory();
             FileSystemWatcher = new FileSystemWatcherFactory();
         }
 
+        public IZipFile ZipFile { get; }
+        
         public IDirectory Directory { get; }
 
         public IFile File { get; }

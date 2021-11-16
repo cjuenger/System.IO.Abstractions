@@ -3,6 +3,7 @@
     public interface IFileSystem
     {
         IFile File { get; }
+        IZipFile ZipFile { get; }
         IDirectory Directory { get; }
         IFileInfoFactory FileInfo { get; }
         IFileStreamFactory FileStream { get; }

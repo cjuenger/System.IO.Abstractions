@@ -30,7 +30,17 @@ namespace System.IO.Abstractions.Tests
                 fileSystemMock.Setup(x => x.File.ToString()).Returns("")
             );
         }
+        
+        [Test]
+        public void Mock_ZipFile_Succeeds()
+        {
+            var fileSystemMock = new Moq.Mock<IFileSystem>();
 
+            Assert.DoesNotThrow(() =>
+                fileSystemMock.Setup(x => x.ZipFile.ToString()).Returns("")
+            );
+        }
+        
         [Test]
         public void Mock_Directory_Succeeds()
         {
